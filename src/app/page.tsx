@@ -7,8 +7,8 @@ export default function Home() {
       <div className="relative w-64 h-64 mb-8 rounded-2xl overflow-hidden shadow-md border-4 border-white/40">
         {/* Placeholder for Cat Meme */}
         <Image
-          src="/cowboy_cat.png"
-          alt="Cowboy hat cat"
+          src="/puppy_eyes.png"
+          alt="Sad puppy eyes"
           fill
           className="object-cover object-top"
           priority

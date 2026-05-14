@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 export default function InteractiveButtons() {
   const router = useRouter();
   const [noStyle, setNoStyle] = useState<React.CSSProperties>({});
-  const [isAccepting, setIsAccepting] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   // Lock flag: while true the button is mid-flight and click is blocked
   const isMoving = useRef(false);
@@ -53,13 +52,9 @@ export default function InteractiveButtons() {
     }, 200);
   }, []);
 
-  const handleYes = async () => {
-    setIsAccepting(true);
-    try {
-      await fetch("/api/accept", { method: "POST" });
-    } catch (err) {
-      console.error(err);
-    }
+  const handleYes = () => {
+    // Fire-and-forget — do NOT await so navigation is instant
+    fetch("/api/accept", { method: "POST" }).catch((err) => console.error(err));
     router.push("/yes");
   };
 
@@ -78,10 +73,9 @@ export default function InteractiveButtons() {
       {/* YES button */}
       <button
         onClick={handleYes}
-        disabled={isAccepting}
-        className="px-7 py-2.5 sm:px-10 sm:py-3 bg-rose-400 hover:bg-rose-500 text-white rounded-full font-semibold text-base sm:text-lg shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+        className="px-7 py-2.5 sm:px-10 sm:py-3 bg-fuchsia-600 hover:bg-fuchsia-700 text-white rounded-full font-semibold text-base sm:text-lg shadow-md hover:shadow-lg transition-all duration-300"
       >
-        {isAccepting ? "Yes!!! 🥹" : "Yes 💖"}
+        Yes 💖
       </button>
 
       {/*
