@@ -4,7 +4,7 @@ import InteractiveButtons from "@/components/InteractiveButtons";
 export default function Home() {
   return (
     <div className="w-full max-w-md mx-auto p-8 rounded-3xl glass-card flex flex-col items-center justify-center text-center">
-      <div className="relative w-64 h-64 mb-8 rounded-2xl overflow-hidden shadow-md border-4 border-white/40">
+      <div className="relative w-64 h-64 mb-8 mx-auto rounded-2xl overflow-hidden shadow-md border-4 border-white/40">
         {/* Placeholder for Cat Meme */}
         <Image
           src="https://media.tenor.com/f1K5B1_l_00AAAAM/love-you-more-smile.gif"

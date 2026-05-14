@@ -92,6 +92,7 @@ export default function InteractiveButtons() {
           moveButton();
         }}
         onClick={handleNo}
+        tabIndex={-1}
         style={noStyle}
         className="ml-4 sm:ml-5 px-3 py-1.5 sm:px-5 sm:py-2 bg-white/50 text-gray-600 border border-gray-200 rounded-full font-medium text-xs sm:text-sm shadow-sm backdrop-blur-sm select-none"
       >

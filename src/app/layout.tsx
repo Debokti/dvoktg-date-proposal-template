@@ -23,6 +23,9 @@ export default function RootLayout({
         <main className="min-h-screen flex items-center justify-center p-4 py-10">
           {children}
         </main>
+        <footer className="w-full text-center py-4 text-[#8b7568] text-sm mt-auto opacity-80 pb-6">
+          made with love by dvoktg using Next.js 💖
+        </footer>
       </body>
     </html>
   );

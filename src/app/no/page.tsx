@@ -7,10 +7,11 @@ export default function NoPage() {
       <div className="relative w-64 h-64 mb-8 rounded-2xl overflow-hidden shadow-md border-4 border-white/40 bg-gray-100">
         {/* Placeholder for Sad Cat Meme */}
         <Image
-          src="/crying_cat.png"
+          src="https://i.kym-cdn.com/entries/icons/original/000/026/489/crying.jpg"
           alt="Crying cat"
           fill
-          className="object-cover object-top"
+          unoptimized
+          className="object-cover object-center"
           priority
         />
       </div>
