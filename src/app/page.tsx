@@ -7,10 +7,9 @@ export default function Home() {
       <div className="relative w-64 h-64 mb-8 mx-auto rounded-2xl overflow-hidden shadow-md border-4 border-white/40">
         {/* Placeholder for Cat Meme */}
         <Image
-          src="https://media.tenor.com/f1K5B1_l_00AAAAM/love-you-more-smile.gif"
-          alt="Ollie the polite cat"
+          src="/cowboy_cat.png"
+          alt="Cowboy cat"
           fill
-          unoptimized
           className="object-cover object-center"
           priority
         />
@@ -20,7 +19,7 @@ export default function Home() {
         Priya,
       </h1>
       <p className="text-xl sm:text-2xl text-[#6b5548] mb-8 font-medium whitespace-nowrap">
-        Are we finally going on a date? 👉👈
+        Are we finally going on a date?
       </p>
 
       <InteractiveButtons />
