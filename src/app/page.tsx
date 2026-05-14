@@ -7,7 +7,7 @@ export default function Home() {
       <div className="relative w-64 h-64 mb-8 mx-auto rounded-2xl overflow-hidden shadow-md border-4 border-white/40">
         {/* Placeholder for Cat Meme */}
         <Image
-          src="/cowboy_cat.png"
+          src="/standing_cat.jpg"
           alt="Cowboy cat"
           fill
           className="object-cover object-center"
