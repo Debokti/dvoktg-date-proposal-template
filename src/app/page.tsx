@@ -7,9 +7,10 @@ export default function Home() {
       <div className="relative w-64 h-64 mb-8 rounded-2xl overflow-hidden shadow-md border-4 border-white/40">
         {/* Placeholder for Cat Meme */}
         <Image
-          src="/cowboy_cat.png"
-          alt="Sad puppy eyes cat"
+          src="https://media.tenor.com/f1K5B1_l_00AAAAM/love-you-more-smile.gif"
+          alt="Ollie the polite cat"
           fill
+          unoptimized
           className="object-cover object-center"
           priority
         />
