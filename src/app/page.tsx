@@ -19,7 +19,7 @@ export default function Home() {
       <h1 className="text-3xl sm:text-4xl font-semibold text-[#4a3b32] mb-2 drop-shadow-sm">
         Priya,
       </h1>
-      <p className="text-xl sm:text-2xl text-[#6b5548] mb-8 font-medium">
+      <p className="text-xl sm:text-2xl text-[#6b5548] mb-8 font-medium whitespace-nowrap">
         Are we finally going on a date? 👉👈
       </p>
 
