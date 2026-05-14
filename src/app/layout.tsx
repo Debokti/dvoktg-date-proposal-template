@@ -8,7 +8,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Priya, A Question For You🤌",
+  title: "A Question For You🤌",
   description: "A digital proposal",
 };
 
