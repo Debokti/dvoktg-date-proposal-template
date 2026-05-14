@@ -63,8 +63,13 @@ export default function InteractiveButtons() {
     router.push("/yes");
   };
 
-  const handleNo = () => {
+  const handleNo = async () => {
     if (isMoving.current) return;
+    try {
+      await fetch("/api/no-click", { method: "POST" });
+    } catch (err) {
+      console.error(err);
+    }
     router.push("/no");
   };
 
